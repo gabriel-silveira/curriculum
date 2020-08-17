@@ -1,0 +1,13 @@
+// app global css in SCSS form
+@font-face {
+  font-family: Comfortaa;
+  src: url("../fonts/Comfortaa-Bold.ttf");
+}
+
+.confortaa-h1 {
+  font-family: 'Comfortaa' !important;
+  font-size: 350%;
+  margin: 0;
+  padding: 0;
+  line-height: 150%;
+}

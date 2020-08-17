@@ -1,0 +1,67 @@
+<template>
+  <q-layout view="lHh Lpr lFf">
+    <q-drawer
+      show-if-above
+      bordered
+      content-class="bg-primary"
+    >
+      <div class="absolute-center full-width text-center q-pt-lg q-pb-md">
+        <img
+          class="profile-image"
+          src="~assets/imgs/gabriel-silveira-profile.png"
+        />
+        <q-list
+          class="full-width"
+          dark
+        >
+          <q-item
+            v-for="items of menu"
+            :key="items.name"
+            clickable
+            v-ripple
+          >
+            <q-item-section>{{ items.name }}</q-item-section>
+          </q-item>
+        </q-list>
+      </div>
+    </q-drawer>
+
+    <q-page-container>
+      <router-view />
+    </q-page-container>
+  </q-layout>
+</template>
+
+<script>
+export default {
+  name: 'MainLayout',
+  data: () => ({
+    menu: [
+      {
+        name: 'SOBRE'
+      },
+      {
+        name: 'EXPERIÊNCIA'
+      },
+      {
+        name: 'EDUCAÇÃO'
+      },
+      {
+        name: 'HABILIDADES'
+      },
+      {
+        name: 'CURRICULUM (PDF)'
+      }
+    ]
+  })
+}
+</script>
+
+<style>
+.profile-image {
+  width: 130px;
+  border-radius: 100%;
+  border: 8px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+}
+</style>
