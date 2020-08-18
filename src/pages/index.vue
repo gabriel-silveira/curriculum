@@ -5,7 +5,7 @@
       <div class="text-body1">gabriel@gabrielsilveira.com.br</div>
       <p
         class="text-body1 q-pt-lg q-mt-lg"
-        style="width: 1000px;"
+        style="width: 900px;"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.
       </p>
@@ -18,7 +18,7 @@
         />
         <i
           class="devicon-linkedin-plain text-primary cursor-pointer"
-          @click="goLink('https://github.com/gabriel-silveira')"
+          @click="goLink('https://www.linkedin.com/in/gabriel-silveira/')"
         />
       </div>
     </div>
@@ -40,7 +40,7 @@ export default {
 .align-content {
   position: absolute;
   top: 50%;
-  margin-top: -180px;
+  margin-top: -150px;
 }
 
 .dev-icons i {

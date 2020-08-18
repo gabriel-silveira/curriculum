@@ -19,6 +19,7 @@
             :key="items.name"
             clickable
             v-ripple
+            @click="goPage(items.path)"
           >
             <q-item-section>{{ items.name }}</q-item-section>
           </q-item>
@@ -38,22 +39,37 @@ export default {
   data: () => ({
     menu: [
       {
-        name: 'SOBRE'
+        name: 'SOBRE',
+        path: 'home'
       },
       {
-        name: 'EXPERIÊNCIA'
+        name: 'EXPERIÊNCIA',
+        path: 'experience'
       },
       {
-        name: 'EDUCAÇÃO'
+        name: 'EDUCAÇÃO',
+        path: 'education'
       },
       {
-        name: 'HABILIDADES'
+        name: 'HABILIDADES',
+        path: 'skills'
+      },
+      {
+        name: 'CONTATO',
+        path: 'contact'
       },
       {
         name: 'CURRICULUM (PDF)'
       }
     ]
-  })
+  }),
+  methods: {
+    goPage (name) {
+      this.$router.push({
+        name
+      })
+    }
+  }
 }
 </script>
 
