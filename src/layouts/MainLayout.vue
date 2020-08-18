@@ -9,6 +9,7 @@
         <img
           class="profile-image"
           src="~assets/imgs/gabriel-silveira-profile.png"
+          title="Gabriel Silveira"
         />
         <q-list
           class="full-width"
@@ -53,14 +54,14 @@ export default {
       {
         name: 'HABILIDADES',
         path: 'skills'
-      },
+      }/* ,
       {
         name: 'CONTATO',
         path: 'contact'
       },
       {
         name: 'CURRICULUM (PDF)'
-      }
+      } */
     ]
   }),
   methods: {

@@ -3,12 +3,16 @@
     <div class="align-content">
       <h1 class="confortaa-h1 text-primary">Gabriel Silveira, desenvolvedor web</h1>
       <div class="text-body1">gabriel@gabrielsilveira.com.br</div>
-      <p
+      <div
         class="text-body1 q-pt-lg q-mt-lg"
-        style="width: 900px;"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.
-      </p>
+        <p>
+          Sou desenvolvedor web com mais de 10 anos de atividade, com experiência em SPAs e back end Node JS, PHP e Python.
+        </p>
+        <p>
+          Em busca de novas oportunidades.
+        </p>
+      </div>
       <div
         class="dev-icons q-mt-xl"
       >

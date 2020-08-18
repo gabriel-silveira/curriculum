@@ -8,7 +8,7 @@ export default [
       Responsável pelo desenvolvimento e manutenção de e-commerce white label para venda de
       ingressos. feito em  em cloud computing.
     `,
-    technologies: ['Node', 'Vue.js', 'Vuex', 'Quasar Framework', 'AWS']
+    technologies: ['ES6+', 'Node', 'Vue.js', 'Vuex', 'Quasar Framework', 'AWS']
   },
   {
     company: 'Replikante',
@@ -19,7 +19,8 @@ export default [
       <p>Auxílio na modelagem de bancos de dados em UML para construção de APIs em Node.js;</p>
       <p>Desenvolvimento de APIs em Node.js / Express com documentação OpenAPI 3.0 integrada (YAML, Swagger UI Express, JSDoc);</p>
       <p>Criação de interface de linha de comando (CLI) desenvolvida sobre o Node.js para realizar bootstrapping de recursos / rotas de API, com métodos RESTful (GET, POST, PUT, DELETE, PATCH), além de busca por query parameters, facilitando e agilizando a construção de APIs em Node / Express.</p>
-    `
+    `,
+    technologies: ['ES6+', 'Node', 'Express', 'OpenAPI 3.0', 'Swagger', 'YAML', 'JSDOC']
   },
   {
     company: 'Cartórios de Protesto – BR',
@@ -39,7 +40,8 @@ export default [
       denominado CRA - Central de Remessa de Arquivos;</p>
       <p>Desenvolvimento de aplicações web diversas e APIs;</p>
       <p>Desenvolvimento e manutenção de aplicativos móveis para Android, iOS e totems.</p>
-    `
+    `,
+    technologies: ['Python', 'Flask', 'PHP 7', 'Laravel', 'Vue.js', 'SQL Server', 'MySQL', 'Servidor Apache']
   },
   {
     company: 'Casa da Psiquiatria',
@@ -52,7 +54,8 @@ export default [
       PagSeguro).</p>
       <p>Responsável pelo design de campanhas de impulsionamento para Facebook
       e e-mail marketing divulgando produtos da loja virtual e cursos.</p>
-    `
+    `,
+    technologies: ['PHP 5', 'MySQL', 'Javascript']
   },
   {
     company: 'NEUROSOFT - Equipamentos e Suprimentos Médicos Ltda',
@@ -63,6 +66,7 @@ export default [
       <p>Desenvolvedor e administrador do website da Neurosoft e e-commerce Neuobase (www.neurobase.com.br)</p>
       <p>Design de e-mail marketing, materiais impressos (catálogos de produtos e folders) e
       stands para eventos em congressos na área médica.</p>
-    `
+    `,
+    technologies: ['PHP 5', 'MySQL', 'Javascript']
   }
 ]
