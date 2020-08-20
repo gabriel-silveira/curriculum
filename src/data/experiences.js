@@ -5,8 +5,7 @@ export default [
     period: 'Agosto 2019, Julho 2020',
     place: 'São Paulo, SP',
     description: `
-      Responsável pelo desenvolvimento e manutenção de e-commerce white label para venda de
-      ingressos. feito em  em cloud computing.
+      Responsável pelo desenvolvimento e manutenção de e-commerce white label para venda de ingressos.
     `,
     technologies: ['ES6+', 'Node', 'Vue.js', 'Vuex', 'Quasar Framework', 'AWS']
   },
@@ -16,7 +15,7 @@ export default [
     period: 'Junho 2019, Agosto 2019',
     place: 'São Paulo, SP',
     description: `
-      <p>Auxílio na modelagem de bancos de dados em UML para construção de APIs em Node.js;</p>
+      <p>Auxílio na modelagem UML de bancos de dados para construção de APIs em Node.js;</p>
       <p>Desenvolvimento de APIs em Node.js / Express com documentação OpenAPI 3.0 integrada (YAML, Swagger UI Express, JSDoc);</p>
       <p>Criação de interface de linha de comando (CLI) desenvolvida sobre o Node.js para realizar bootstrapping de recursos / rotas de API, com métodos RESTful (GET, POST, PUT, DELETE, PATCH), além de busca por query parameters, facilitando e agilizando a construção de APIs em Node / Express.</p>
     `,

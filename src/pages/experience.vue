@@ -3,7 +3,7 @@
     <h1 class="confortaa-h2 text-primary">Experiência</h1>
 
     <div
-      style="width:60%"
+      style="width:80%"
       class="row q-mt-xl"
     >
       <div

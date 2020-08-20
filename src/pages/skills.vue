@@ -8,7 +8,11 @@
       <div
         class="col-12 q-pb-xl"
       >
-        <p class="text-body1 text-bold text-primary">Linguagens, ferramentas e frameworks</p>
+        <q-card flat class="bg-grey-2 q-mb-xl">
+          <q-card-section class="text-bold text-grey-7">
+            {{ $t('pages.contents.skills.languages') }}
+          </q-card-section>
+        </q-card>
         <div
           class="row q-mb-xl devicons"
         >
@@ -33,22 +37,25 @@
             <div>{{ skill.name }}</div>
           </div>
         </div>
-        <p class="text-body1 text-bold text-primary">Workflow</p>
+
+        <q-card flat class="bg-grey-2 q-mb-lg">
+          <q-card-section class="text-bold text-grey-7">
+            {{ $t('pages.contents.skills.workflow.subtitle') }}
+          </q-card-section>
+        </q-card>
         <div class="row">
-          <div class="col-3">
-            <p>- Mobile first</p>
-            <p>- Design responsivo</p>
-            <p>- Desenvolvimento ágil e Scrum</p>
-          </div>
-          <div class="col-3">
-            <p>- Código limpo</p>
-            <p>- Utilização de code style guide</p>
-            <p>- Versionamento semântico e code review</p>
-          </div>
-          <div class="col-3">
-            <p>- Análise de requisitos</p>
-            <p>- Orientação a objetos</p>
-          </div>
+          <div
+            class="col-3"
+            v-html="$t('pages.contents.skills.workflow.col[0]')"
+          />
+          <div
+            class="col-3"
+            v-html="$t('pages.contents.skills.workflow.col[1]')"
+          />
+          <div
+            class="col-3"
+            v-html="$t('pages.contents.skills.workflow.col[2]')"
+          />
         </div>
       </div>
     </div>
