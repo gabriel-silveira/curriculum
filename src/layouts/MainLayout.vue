@@ -12,7 +12,11 @@
           round
           dense
         />
-        <q-toolbar-title>Gabriel Silveira</q-toolbar-title>
+        <q-toolbar-title
+          v-if="$route.name !== 'about'"
+        >
+          Gabriel Silveira
+        </q-toolbar-title>
       </q-toolbar>
     </q-header>
 

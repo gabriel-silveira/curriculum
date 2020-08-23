@@ -1,5 +1,7 @@
 <template>
-  <q-page class="q-pa-xl">
+  <q-page
+    :class="isMobile ? 'q-pa-md' : 'q-pa-xl'"
+  >
     <q-dialog
       v-model="sent"
       persistent
@@ -25,7 +27,7 @@
 
     <div
       v-if="!sent"
-      class="align-content-contact"
+      :class="isMobile ? '' : 'align-content-contact'"
     >
       <h1 class="confortaa-h2 text-primary">{{ $t('pages.contents.contact.title') }}</h1>
 
@@ -39,27 +41,27 @@
       </div>
 
       <q-form
-        style="width: 800px"
+        :style="isMobile ? '' : 'width: 800px'"
         @submit="submit"
       >
         <div
           class="row q-col-gutter-lg"
         >
-          <div class="col-4">
+          <div class="col-xs-12 col-md-4">
             <q-input
               v-model="user.name"
               :placeholder="$t('pages.contents.contact.fields.name')"
               :rules="[ val => val && val.length > 0 || 'Informe seu nome']"
             />
           </div>
-          <div class="col-4">
+          <div class="col-xs-12 col-md-4">
             <q-input
               v-model="user.from"
               :placeholder="$t('pages.contents.contact.fields.email')"
               :rules="[val => !!val || 'Informe um e-mail válido', isValidEmail]"
             />
           </div>
-          <div class="col-4">
+          <div class="col-xs-12 col-md-4">
             <q-input
               v-model="user.phone"
               :placeholder="$t('pages.contents.contact.fields.phone')"
@@ -86,13 +88,12 @@
         >
           <div class="col-12">
             <q-btn
-              class="float-right"
+              :class="isMobile ? 'full-width' : 'float-right'"
               color="primary"
               label="Enviar"
               type="submit"
               :loading="sending"
             />
-            <div v-html="$t('pages.contents.contact.mailMe')" />
           </div>
         </div>
       </q-form>
@@ -119,6 +120,11 @@ export default {
     sending: false,
     sent: false
   }),
+  computed: {
+    isMobile () {
+      return this.$q.platform.is.mobile
+    }
+  },
   methods: {
     async submit () {
       try {

@@ -29,14 +29,17 @@
     </div>
     <div
       v-else
-      class="text-center"
     >
-      <img
-        src="~assets/imgs/gabriel-silveira-profile.png"
-        class="profile-image"
-        title="Gabriel Silveira"
-      />
-      <h1 class="confortaa-h1">{{ $t('pages.contents.about.title') }}</h1>
+      <div
+      class="text-center"
+      >
+        <img
+          src="~assets/imgs/gabriel-silveira-profile.png"
+          class="profile-image"
+          title="Gabriel Silveira"
+        />
+      </div>
+      <h1 class="confortaa-h1 text-center">{{ $t('pages.contents.about.title') }}</h1>
       <div
         class="text-body1 q-pt-lg"
         v-html="$t('pages.contents.about.description')"

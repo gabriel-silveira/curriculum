@@ -1,6 +1,11 @@
 <template>
-  <q-page class="q-pa-xl">
-    <div class="align-content-education" style="width:50%">
+  <q-page
+    :class="isMobile ? 'flex items-center q-pa-lg' : 'q-pa-xl'"
+  >
+    <div
+      :class="isMobile ? '' : 'align-content-education'"
+      :style="isMobile ? '' : 'width:50%'"
+    >
       <h1 class="confortaa-h2 text-primary">{{ $t('pages.contents.education.title') }}</h1>
 
       <div
@@ -27,6 +32,11 @@ export default {
   methods: {
     goExternalLink (url) {
       window.open(url)
+    }
+  },
+  computed: {
+    isMobile () {
+      return this.$q.platform.is.mobile
     }
   }
 }
