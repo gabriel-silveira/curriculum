@@ -1,6 +1,5 @@
 <template>
   <div
-    v-if="!$q.platform.is.mobile"
     class="full-height"
   >
     <div
@@ -46,32 +45,6 @@
       </div>
     </div>
   </div>
-
-  <q-dialog
-    v-else
-    v-model="showMobileMenu"
-    persistent
-    maximized
-    transition-show="slide-up"
-    transition-hide="slide-down"
-  >
-    <q-card class="bg-primary text-white">
-      <q-bar>
-        <q-space />
-        <q-btn dense flat icon="close" v-close-popup>
-          <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
-        </q-btn>
-      </q-bar>
-
-      <q-card-section>
-        <div class="text-h6">Alert</div>
-      </q-card-section>
-
-      <q-card-section class="q-pt-none">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum repellendus sit voluptate voluptas eveniet porro. Rerum blanditiis perferendis totam, ea at omnis vel numquam exercitationem aut, natus minima, porro labore.
-      </q-card-section>
-    </q-card>
-  </q-dialog>
 </template>
 
 <script>
@@ -79,12 +52,6 @@ import ROUTES from '../router/routes-names'
 
 export default {
   name: 'MainMenuComponent',
-  props: {
-    showMobileMenu: {
-      type: Boolean,
-      default: false
-    }
-  },
   data: () => ({
     ROUTES
   }),

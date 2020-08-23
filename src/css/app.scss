@@ -19,3 +19,23 @@
   padding: 0;
   line-height: 150%;
 }
+
+.profile-image {
+  width: 130px;
+  border-radius: 100%;
+  border: 8px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .confortaa-h1 {
+    font-size: 200%;
+  }
+  .confortaa-h2 {
+    font-size: 150%;
+  }
+
+  .profile-image {
+    margin-top: -40px;
+  }
+}
